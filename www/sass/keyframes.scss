@@ -1,0 +1,105 @@
+@keyframes slideme {
+    0% {
+      left: -30px;
+      margin-left: 0px; }
+    30% {
+      left: 110%;
+      margin-left: 80px; }
+    100% {
+      left: 110%;
+      margin-left: 80px; } }
+
+      @keyframes shine {
+        0%{
+            opacity: 0.3;
+            transform: scale(1);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+    
+    @keyframes blink {
+      from {
+      transform: scale(0);
+      opacity: 1; }
+      50%{
+          transform: scale(1);
+          opacity: 0.8; 
+      }
+      to {
+      transform: scale(2);
+      opacity: 0;
+      }
+  }
+  @keyframes nxt {
+      from {
+      transform: translateX(-.1rem); }
+      to {
+      transform: translateX(.1rem); } }
+
+      @keyframes pulsation {
+        0% {
+            opacity: 1;
+            transform: scale(0);
+        }
+        75% {
+            opacity: 0.6;
+            transform: scale(0.75);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(1);
+        }
+      }
+
+      @keyframes floating {
+        0%{
+          transform: translateY(0em);
+        }
+        100%{
+          transform: translateY(-0.8em);
+        }
+    }
+    @keyframes roll {
+      0% {
+        transform: rotate(0deg); }
+      100% {
+        transform: rotate(360deg); } }
+
+        @keyframes pulse1 {
+          0% {
+            box-shadow: 0 0 0 0 rgba(242, 90, 199, 0.6);
+          }
+          70% {
+              box-shadow: 0 0 0 20px rgba(242, 90, 199, 0);
+          }
+          100% {
+              box-shadow: 0 0 0 0 rgba(242, 90, 199, 0);
+          }
+        }
+
+  @keyframes stroke {
+    0%{
+      stroke-dashoffset: 0rem;
+    }
+    100%{
+      stroke-dashoffset: 1000rem;
+    }
+  }
+  @keyframes strokeback {
+    0%{
+      stroke-dashoffset: 1000rem;
+    }
+    100%{
+      stroke-dashoffset: 0rem;
+    }
+  }
+
+  .pt{
+    animation: 400s stroke infinite;
+  }
+  .pt-b{
+    animation: 400s strokeback infinite;
+  }

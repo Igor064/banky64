@@ -1,0 +1,36 @@
+.title{
+    font-size: 38px;
+    &--3{
+        font-size: 32px;
+        line-height: 114.19%;
+        color: #4D4D4D;
+    }
+    @media (max-width: $desktop_sm_res - 1){
+        line-height: 140%;
+    }
+    @media (max-width: 480px){
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.pg-title{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 131%;
+    text-align: center;
+    color: #212A37;
+    @media (max-width: 780px) {
+        font-size: 36px;
+    }
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'History Pro';
+    font-style: normal;
+    font-weight: 400;
+    color: #212A37;
+    text-transform: uppercase;
+}

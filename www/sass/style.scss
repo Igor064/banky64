@@ -1,0 +1,25 @@
+@import 'fonts.scss';
+@import 'mixins.scss';
+@import 'variables.scss';
+@import 'functions.scss';
+@import 'globals.scss';
+
+//elements
+@import 'elements/title.scss';
+@import 'elements/btn.scss';
+@import 'elements/slider.scss';
+@import 'elements/form.scss';
+// blocks
+@import 'blocks/header.scss';
+@import 'blocks/screen.scss';
+@import 'blocks/product.scss';
+@import 'blocks/gallery.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/advantages.scss';
+@import 'blocks/about.scss';
+@import 'blocks/service.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/popup.scss';
+@import 'blocks/policy.scss';
+
+@import 'keyframes.scss';

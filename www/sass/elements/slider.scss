@@ -1,0 +1,36 @@
+.slider-arrow{
+    pointer-events: all;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='9' viewBox='0 0 15 9' fill='none'%3E%3Cpath d='M7.82603 3.23139L3.119 7.93842C2.609 8.44842 1.78117 8.44842 1.27117 7.93842C0.761172 7.42842 0.761172 6.6006 1.27117 6.0906L6.95509 0.406683C7.43675 -0.0749836 8.21653 -0.0749836 8.69697 0.406683L14.3809 6.0906C14.8909 6.6006 14.8909 7.42842 14.3809 7.93842C13.8709 8.44842 13.0431 8.44842 12.5331 7.93842L7.82603 3.23139Z' fill='%239A8A62'/%3E%3C/svg%3E");
+}
+
+.slider-prev{
+    top: -25px;
+    @media (max-width: 899px) {
+        display: block;
+        bottom: 50%;
+        left: unset;
+        transform: translateY(50%) scaleY(-1) rotate(-90deg);
+        left: -15px;
+        top: unset;
+    }
+}
+.slider-next{
+    bottom: -25px;
+    transform: scaleY(-1);
+    @media (max-width: 899px) {
+        display: block;
+        bottom: 50%;
+        left: unset;
+        transform: translateY(50%) scaleY(-1) rotate(90deg);
+        right: -15px;
+    }
+}
+

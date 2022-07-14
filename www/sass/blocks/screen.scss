@@ -1,0 +1,120 @@
+.screen{
+    background: #F7F7F7;
+    border-radius: 24px;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(../img/bg.jpg);
+    margin-top: 31px;
+    padding-top: 82px;
+    padding-left: 66px;
+    padding-right: 400px;
+    padding-bottom: 103px;
+    position: relative;
+    &-block{
+        position: relative;
+    }
+    &-dec{
+        position: absolute;
+        right: 0;
+        top: -50px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    &-wrap{
+        position: relative;
+    }
+    &-bush{
+        position: absolute;
+        z-index: 2;
+        pointer-events: none;
+        &--1{
+            bottom: -188px;
+            right: -210px;
+        }
+        &--2{
+            top: -89px;
+            left: -276px;
+        }
+    }
+    &-title{
+        font-size: 59.28px;
+        line-height: 78px;
+        font-family: 'History Pro';
+    }
+    &-btn{
+        margin-top: 65px;
+    }
+    &-photo{
+        width: 500px;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+    }
+ }
+
+ @media (max-width: $desktop_sm_res - 1){
+    .screen{
+        padding-bottom: 150px;
+        &-photo{
+            right: 0;
+        }
+    }
+  }
+
+  @media (max-width: 899px){
+    .screen{
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        padding-bottom: 0;
+        &-btn{
+            margin-right: auto;
+            margin-left: auto;
+        }
+        &-photo{
+            position: relative;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 100%;
+            margin-top: 40px;
+        }
+    }
+  }
+
+  @media (max-width: 599px){
+    .screen{
+        padding-top: 45px;
+        &-title{
+            font-size: 42px;
+            line-height: 160%;
+        }
+        &-bush{
+            &--1{
+                bottom: -110px;
+                right: -102px;
+                width: 300px;
+            }
+        }
+        &-btn{
+            margin-top: 30px;
+        }
+    }
+  }
+
+  @media (max-width: 450px){
+    .screen{
+        &-bush{
+            &--1{
+                bottom: -110px * .65;
+                right: -102px * .65;
+                width: 300px * .65;
+            }
+        }
+        &-title{
+            font-size: 36px;
+            line-height: 160%;
+        }
+    }
+  }
